@@ -29,7 +29,7 @@ GuardDuty, AWS Config, and CloudTrail strengthen the monitoring setup.
 
 ------------------------------------------------------------------------
 
-# 🖼️ Screenshots
+# Diagram
 
 ![Diagram](./screenshot/diagram.png)
 
