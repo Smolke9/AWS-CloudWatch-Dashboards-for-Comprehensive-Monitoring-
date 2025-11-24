@@ -31,21 +31,7 @@ GuardDuty, AWS Config, and CloudTrail strengthen the monitoring setup.
 
 # 🖼️ Screenshots
 
-Create a folder named `screenshots/` and add your images:
-
-    screenshots/
-      billing-dashboard.png
-      logs-dashboard.png
-      network-dashboard.png
-      security-dashboard.png
-      cloudwatch-agent-config.png
-
-Embed like this:
-
-![Billing Dashboard](screenshots/billing-dashboard.png)\
-![Logs Dashboard](screenshots/logs-dashboard.png)\
-![Network Dashboard](screenshots/network-dashboard.png)\
-![Security Dashboard](screenshots/security-dashboard.png)
+![Diagram](./screenshot/digram.png)
 
 ------------------------------------------------------------------------
 
@@ -83,7 +69,8 @@ Build end-to-end CloudWatch dashboards that provide:
 
 1.  Go to **Billing → Cost Management**\
 2.  Enable **Cost Explorer**
-
+![Diagram](./screenshot/1.jpg)
+![Diagram](./screenshot/2.jpg)
 ## ✔️ Step 2: Create Reports in Cost Explorer
 
 ### **2.1 Total Cost Over Time**
@@ -91,19 +78,19 @@ Build end-to-end CloudWatch dashboards that provide:
 -   Granularity: Daily\
 -   Metric: Unblended Cost\
 -   Group by: None
-
+![Diagram](./screenshot/3.jpg)
 ### **2.2 Daily Estimated Charges by Service**
 
 -   Granularity: Daily\
 -   Group by: Service (EC2, S3, RDS, ...)
-
+![Diagram](./screenshot/4.jpg)
 ### **2.3 Monthly Cost Breakdown**
 
 -   Granularity: Monthly\
 -   Group by: Service
 
 📌 Add generated charts to the dashboard.
-
+![Diagram](./screenshot/5.jpg)
 ------------------------------------------------------------------------
 
 # 📁 2. Application & System Logs Monitoring
@@ -139,14 +126,14 @@ Start the agent:
 ``` bash
 sudo systemctl start amazon-cloudwatch-agent
 ```
-
+![Diagram](./screenshot/6.jpg)
 ------------------------------------------------------------------------
 
 ## ✔️ Step 4: Use CloudWatch Logs Insights
 
 Navigate to:\
 **CloudWatch → Logs → Log Insights**
-
+![Diagram](./screenshot/6.jpg)
 Example queries:
 
 ### 🔹 Rejected Traffic
@@ -175,7 +162,7 @@ Add widgets:
 -   Line Graph (response times)\
 -   Bar Chart (error counts)\
 -   Numeric Widget (errors in last 1 hr)
-
+![Diagram](./screenshot/7.jpg)
 ------------------------------------------------------------------------
 
 # 🖥️ 3. System Logs Details
@@ -221,7 +208,7 @@ Example advanced agent config:
   }
 }
 ```
-
+![Diagram](./screenshot/8.jpg)
 ------------------------------------------------------------------------
 
 # 🌐 4. Network Monitoring Dashboard
@@ -240,6 +227,7 @@ fields srcAddr, dstPort, action, bytes
 | filter action="REJECT"
 | sort bytes desc
 ```
+![Diagram](./screenshot/9.jpg)
 
 ------------------------------------------------------------------------
 
