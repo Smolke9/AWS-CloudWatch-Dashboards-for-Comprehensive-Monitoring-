@@ -5,7 +5,7 @@
 **Project:** AWS CloudWatch Dashboards for Comprehensive Monitoring\
 **Batch:** MCA 7 Feb 2025 & DevOps 2 Jun 2025\
 **Student:** Suraj Molke\
-**Mentors:** Ravindra Bagle Sir, Swati Zampal Ma'am\
+**Mentors:** Ravindra Bagale Sir, Swati Zampal Ma'am\
 **Institute:** Fortune Cloud Technologies, Pune
 
 ------------------------------------------------------------------------
